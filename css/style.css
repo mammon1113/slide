@@ -4,8 +4,10 @@
   color: white;
 }
 
+
 .wrapper {
     position: absolute;
+    border: 1px solid black;
     top: 0;
     left: 0;
     width: 100%;
@@ -114,27 +116,6 @@
 
 
 
-@keyframes squery {
-  0%{ opacity: .5;
-      transform: translateY(0) rotate(45deg);
-  }
-
-  25%{ opacity: .75;
-      transform: translateY(-400px) rotate(90deg);
-  }
-
-  50%{ opacity: 1;
-      transform: translateY(-600px) rotate(135deg);
-  }
-
-  100%{ opacity: 0;
-      transform: translateY(-1000px) rotate(180deg);
-  }
-
-}
-
-
-
 
 .window {
   position: absolute;
@@ -146,34 +127,34 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.border {
+   position: absolute;
+}
 
-.border1{
-    position: absolute;
+
+.border.border1 {
     top: 15%;
     left: 30%;
+    width: 30%;
     border-top: 1px solid white;
-    width: 400px;
 }
-.border2{
-    position: absolute;
+.border.border2 {
     top: 11%;
     left: 32%;
+    height: 45%;
     border-left: 1px solid white;
-    height: 300px;
 }
-.border3{
-    position: absolute;
+.border.border3 {
     top: 36%;
     left: 69%;
+    height: 45%;
     border-left: 1px solid white;
-    height: 300px;
 }
-.border4{
-    position: absolute;
+.border.border4 {
     top: 80%;
     left: 42%;
+    width: 30%;
     border-bottom: 1px solid white;
-    width: 400px;
 }
 
 .images {
@@ -184,15 +165,16 @@
 
 .images > img { 
   width: 100%;
+  height: auto;
+  max-width: 100%;  
 }
 
 .buttons{
   position: absolute;
   top: 70%;
   left: 40%;
+  z-index: 1;
 }
-
-
 
 .buttons button{
   background-color: hsla(0, 0%, 100%, .15);
